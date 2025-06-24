@@ -24,14 +24,22 @@
                 padding: 20px;
             }
             .contact-buttons {
-                justify-content: space-between;
-                display: inline-flex;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 10px;
+                padding: 20px;
                 flex-wrap: wrap;
 
             }
             .second-contact-buttons {
-                display: inline-flex;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 10px;
+                padding: 20px;
                 flex-wrap: wrap;
+
                 
             }
             .email-action {
@@ -107,6 +115,16 @@
                 margin-top: 20px;
                 width: 100%;
                 text-align: center;
+            }
+            @media (max-width: 480px) {
+                .contact-buttons {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .second-contact-buttons {
+                    flex-direction: column;
+                    align-items: center;
+                }
             }
         </style>
     </head>
