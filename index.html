@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+icons">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <meta name="google-site-verification" content="yrjoCYYzWIblbdsxBEd57Kd4OCPOsdUH2JT0SVM0V0M" />
         <title> Ifeanyi digital service portfolio </title>
         <style>
             body {
@@ -124,6 +125,12 @@
                 width: 100%;
                 text-align: center;
             }
+        @media (max-width: 768px) {
+            .header-section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
             @media (max-width: 480px) {
                 .contact-buttons {
                     flex-direction: column;
@@ -137,13 +144,18 @@
                     flex-direction: column;
                     align-items: center;
                 }
+                .header-section {
+                    flex-direction: row;
+                    gap: 10px;
+                }
             }
+                 
         </style>
     </head>
 <body>
     <header>
         <div class="header-section">
-        <h1>IFEANYI DIGITAL<br> SERVICES </h1>
+        <h1>IFEANYI DIGITAL SERVICES </h1>
         <nav role="navigation" class="nav-links">
             <a href="index.html" class="nav-link" aria-label="Go to home page"> Home </a>
             <a href="contact.html" class="nav-link" target="_blank" aria-label="Contact me"> Contact </a>

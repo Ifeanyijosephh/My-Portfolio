@@ -78,21 +78,14 @@
                     flex-direction: column;
                     align-items: center;
                 }
-                .nav-links {
-                    margin-top: 10px;
-                }
-            }
             @media (max-width: 480px) {
                 .header-section {
-                    flex-direction: column;
-                    align-items: left;
-                    flex-wrap: wrap;
+                    flex-direction: row;
                     gap: 10px;
                 }
-                .nav-links {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: left;
+               .nav-links {
+                    flex-direction: column;
+                    align-items: center;
                 }
             }
         </style>
@@ -103,8 +96,8 @@
                 <h1>IFEANYI DIGITAL SERVICES</h1>
                 <nav class="nav-links" role="navigation">
                     <a href="index.html" class="nav-link">Home</a>
-                    <a href="services.html" class="nav-link">Services</a>
                     <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="services.html" class="nav-link">Services</a>
                 </nav>
             </div>
         </header>
