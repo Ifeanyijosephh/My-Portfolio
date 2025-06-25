@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Ifeanyi Personal Portfolio">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="author" content="Ifeanyi 08072500911">
+        <meta property="og:title" content="Ifeanyi Digital Services Portfolio">
+        <meta property="og:description" content="Ifeanyi Digital Services - Web Developer & Automation Enthusiast">
+        <meta property="og:image" content="images/ifeanyi.jpg">
+        <meta property="og:url" content="https://example.com/ifeanyi-portfolio">
+        <meta property="og:type" content="website">
+        <meta name="keywords" content="Ifeanyi, portfolio, web developer, automation, digital services, contact">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <title> Ifeanyi digital service </title>
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                background-color: #faf9f6;
+                text-align: center;
+                color: #343434;
+                margin: 20px;
+            }
+            header {
+                background-color: #343434;
+                color: #faf9f6;
+                padding: 20px;
+                border-radius: 10px;
+            }
+            h1 {
+                text-align: left;
+            }
+            .header-section {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .nav-link {
+                color: #faf9f6;
+                text-decoration: none;
+                border: 1px solid #faf9f6;
+                padding: 8px 15px;
+                border-radius: 10px;
+                transition: transform 0.3s ease, background 0.2s ease;
+            }
+            .nav-link:hover {
+                color: #343434;
+                background-color: #faf9f6;
+                font-weight: bold;
+                transform: scale(1.1);
+            }
+            main {
+                margin-top: 20px;
+            }
+            .services-section {
+                height:100vh;
+            }
+            footer {
+                background-color: #343434;
+                padding: 8px;
+                border-radius: 10px;
+                color: grey;
+                font-size: 13px;
+                margin-top: 20px;
+                width: 100%;
+                text-align: center;
+            }
+            .nav-links {
+                display: flex;
+                gap: 15px;
+            }
+            @media (max-width: 768px) {
+                .header-section {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .nav-links {
+                    margin-top: 10px;
+                }
+            }
+            @media (max-width: 480px) {
+                .header-section {
+                    flex-direction: column;
+                    align-items: left;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
+                .nav-links {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: left;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-section">
+                <h1>IFEANYI DIGITAL SERVICES</h1>
+                <nav class="nav-links" role="navigation">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </header>
+            <main role="main">
+                <section class="services-section">
+                    <h2>Our Services</h2>
+                    <p>We offer a range of digital services to help you succeed online:</p>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Automation Solutions</li>
+                        <li>Digital Marketing</li>
+                        <li>SEO Optimization</li>
+                        <li>Content Creation</li>
+                    </ul>
+                    <p>For more details, please contact us.<br>
+                    <i><span style="color: grey; display: inline-block; margin-top: 50px;">Other services coming soon..</span></i> </p>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; 2025 Ifeanyi Digital Services. <br>All rights reserved.</p>
+            </footer>
+    </body>
+</html>

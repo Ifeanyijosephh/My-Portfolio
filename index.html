@@ -6,6 +6,13 @@
         <meta name="description" content="Ifeanyi Personal Portfolio">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="author" content="Ifeanyi 08072500911">
+        <meta property="og:title" content="Ifeanyi Digital Services Portfolio">
+        <meta property="og:description" content="Ifeanyi Digital Services - Web Developer & Automation Enthusiast">
+        <meta property="og:image" content="images/ifeanyi.jpg">
+        <meta property="og:url" content="https://example.com/ifeanyi-portfolio">
+        <meta property="og:type" content="website">
+        <meta name="keywords" content="Ifeanyi, portfolio, web developer, automation, digital services, contact">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+icons">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
@@ -24,14 +31,32 @@
                 padding: 20px;
                 border-radius: 10px;
             }
-            .contact-buttons {
+            h1 {
+                text-align: left;
+            }
+            .header-section {
                 display: flex;
-                flex-direction: row;
-                justify-content: center;
-                gap: 10px;
-                padding: 20px;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .nav-links {
+                display: flex;
+                gap: 15px;
                 flex-wrap: wrap;
-
+            }
+            .nav-link {
+                color: #faf9f6;
+                text-decoration: none;
+                border: 1px solid #faf9f6;
+                padding: 8px;
+                border-radius: 10px;
+                transition: transform 0.3s ease, background 0.2s ease;
+            }
+            .nav-link:hover {
+                color: #343434;
+                background-color: #faf9f6;
+                font-weight: bold;
+                transform: scale(1.1);
             }
             .second-contact-buttons {
                 display: flex;
@@ -40,10 +65,8 @@
                 gap: 10px;
                 padding: 20px;
                 flex-wrap: wrap;
-
-                
             }
-            .email-action {
+            .second-Github-action {
                 background-color: #343434;
                 padding: 8px 14px;
                 border-radius: 10px;
@@ -51,6 +74,13 @@
                 color: #faf9f6;
                 margin-right: 20px;
                 transition: transform 0.3s ease, background 0.2s ease;
+            }
+            .second-Github-action:hover {
+                transform: scale(1.1);
+                color: #343434;
+                background-color: #faf9f6;
+                border: 1px solid #343434;
+                font-weight: bold;
             }
             .second-email-action {
                 background-color: #343434;
@@ -69,30 +99,7 @@
                 color: #faf9f6;
                 margin-right: 20px;
                 transition: transform 0.3s ease, background 0.2s ease;
-            }
-            .whatsapp-action {
-                background-color: #343434;
-                padding: 8px 14px;
-                border-radius: 10px;
-                text-decoration: none;
-                color: #faf9f6;
-                margin-right: 20px;
-                transition: transform 0.3s ease, background 0.2s ease;
-            }
-            .email-action:hover {
-                transform: scale(1.1);
-                color: #343434;
-                background-color: #faf9f6;
-                border: 1px solid #343434;
-                font-weight: bold;
-            }
-            .whatsapp-action:hover {
-                transform: scale(1.1);
-                color: #343434;
-                background-color: #faf9f6;
-                border: 1px solid #343434;
-                font-weight: bold;
-            }
+            } 
             .second-whatsapp-action:hover {
                 transform: scale(1.1);
                 color: #343434;
@@ -126,18 +133,28 @@
                     flex-direction: column;
                     align-items: center;
                 }
+                .nav-links {
+                    flex-direction: column;
+                    align-items: center;
+                }
             }
         </style>
     </head>
 <body>
     <header>
-        <h1>IFEANYI DIGITAL SERVICES </h1>
+        <div class="header-section">
+        <h1>IFEANYI DIGITAL<br> SERVICES </h1>
+        <nav role="navigation" class="nav-links">
+            <a href="index.html" class="nav-link" aria-label="Go to home page"> Home </a>
+            <a href="contact.html" class="nav-link" target="_blank" aria-label="Contact me"> Contact </a>
+            <a href="services.html" class="nav-link" target="_blank" aria-label="View our services"> Services </a>
+        </nav>
+        </div>
     </header>
     <main>
         <!--hero image-->
         <picture>
             <figure>
-                <figcaption>Ifeanyi's Profile image</figcaption>
             <!--image responsiveness-->
             <source media="(max-width: 368px)" srcset="images/ifeanyi-mobile.jpg">
             <source media="(max-width: 768px)" srcset="images/ifeanyi-tablet.jpg">
@@ -148,12 +165,8 @@
         <!--intro section-->
         <section>
             <h2> Web Developer & Automation Enthusiast</h2>
-            <p> I build websites, clean struture systems, and automatech tasks. Let's work together.</p>
-        <!--contact buttons-->
-        <div class="contact-buttons">
-        <a href="mailto:ifeanyidigitalservices@gmail.com" class="email-action"> <i class="fa-solid fa-envelope"></i> Email me </a>
-        <a href="https://wa.me/+2347043936131" target="_blank" class="whatsapp-action"><i class="fa-brands fa-whatsapp"></i> Chat on Whatsapp</a>
-        </div>
+            <p> I build websites, clean structure systems, and automated tasks. Let's work together.<br>
+            Helping people with websites, flyers and typing jobs. Fast delivery and friendly prices. </p>
         </section> 
         <hr>
         <section>
@@ -163,18 +176,21 @@
                     <li>Web development </li>
                     <li> Scripting & Automation (python) </li>
                     <li> Clean structure, real results </li>
+                    <li>Flyer and poster designs </li>
+                    <li> Typing and assignment expertise for students</li>
                 </ul>
             </article>
             <hr>
             <article>
-                <p> Want a build something together? <br>
+                <p> Want to build something together? <br>
                 Let's connect below </p><br>
             </article>
             <div class="second-contact-buttons">
-            <a href="mailto:ifeanyidigitalservices@gmail.com" class="second-email-action"> <i class="fa-solid fa-envelope"></i> Email me </a>
-            <a href="https://wa.me/+2347043936131" target="_blank" class="second-whatsapp-action"><i class="fa-brands fa-whatsapp"></i> Chat on Whatsapp</a>
+            <a href="https://github.com/ifeanyijosephh" target="_blank" class="second-Github-action" aria-label="Connect with me on Github"><i class="fa-brands fa-github"></i> Connect on GitHub</a>
+            <a href="mailto:ifeanyidigitalservices@gmail.com" class="second-email-action" aria-label="Send me an email"> <i class="fa-solid fa-envelope"></i> Email me </a>
+            <a href="https://wa.me/+2347043936131" target="_blank" class="second-whatsapp-action" aria-label="Chat with me on Whatsapp"><i class="fa-brands fa-whatsapp"></i> Chat on Whatsapp</a>
             </div>
-            </section>
+        </section>
     </main>
     <footer>
         <p>&copy; Ifeanyi digital services, 2025.<br> All rights reserved.</p>
