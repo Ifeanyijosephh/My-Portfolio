@@ -20,119 +20,159 @@
         <link rel="sitemap" href="sitemap.xml" type="application/xml">
         <title> Ifeanyi digital service portfolio </title>
         <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
             body {
                 font-family: 'Roboto';
                 background-color: #faf9f6;
-                text-align: center;
                 color: #343434;
-                margin: 20px;
+            }
+            .main-wrapper {
+                width: 100%;
+                box-sizing: border-box;
+                height: 100%;
             }
             header {
-                background-color: #343434;
                 color: #faf9f6;
-                padding: 20px;
-                border-radius: 10px;
+                padding: 10px;
+                
             }
             h1 {
                 text-align: left;
             }
             .header-section {
                 display: flex;
+                flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
+                background-color: #343434;
+                padding: 10px 30px 10px 30px;
+                border-radius: 25px;
             }
             .nav-links {
                 display: flex;
+                flex-direction: row;
                 gap: 15px;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
+                align-items: center;
             }
             .nav-link {
                 color: #faf9f6;
                 text-decoration: none;
-                border: 1px solid #faf9f6;
-                padding: 8px;
-                border-radius: 10px;
+                padding: 5px;
+                font-weight: bold;
+                letter-spacing: 1px;
                 transition: transform 0.3s ease, background 0.2s ease;
             }
+
+            /*underline effect*/
+
+            .nav-link::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%) scale(0);
+                transform-origin: center; 
+                width: 100%;
+                height: 2px;
+                background-color:  #faf9f6;
+                transition: transform 0.3s ease;
+            }
+            .nav-link:hover::after {
+                transform: translateX(-50%) scale(1);
+            }
             .nav-link:hover {
-                color: #343434;
-                background-color: #faf9f6;
                 font-weight: bold;
                 transform: scale(1.1);
+            }
+            .intro {
+                color: #343434;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+            aside {
+                margin-top: 30px;
+            }
+            .image-intro {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10%;
+                margin-bottom: 30px;
+
             }
             .second-contact-buttons {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                gap: 10px;
+                gap: 20px;
                 padding: 20px;
                 flex-wrap: wrap;
+                cursor: pointer;
             }
             .second-Github-action {
                 background-color: #343434;
-                padding: 8px 14px;
+                padding: 8px;
                 border-radius: 10px;
                 text-decoration: none;
                 color: #faf9f6;
-                margin-right: 20px;
                 transition: transform 0.3s ease, background 0.2s ease;
             }
             .second-Github-action:hover {
                 transform: scale(1.1);
                 color: #343434;
                 background-color: #faf9f6;
-                border: 1px solid #343434;
+                border: 2px solid #343434;
                 font-weight: bold;
             }
             .second-email-action {
                 background-color: #343434;
-                padding: 8px 14px;
+                padding: 8px;
                 border-radius: 10px;
                 text-decoration: none;
                 color: #faf9f6;
-                margin-right: 20px;
                 transition: transform 0.3s ease, background 0.2s ease;
             }
             .second-whatsapp-action {
                 background-color: #343434;
-                padding: 8px 14px;
+                padding: 8px;
                 border-radius: 10px;
                 text-decoration: none;
                 color: #faf9f6;
-                margin-right: 20px;
                 transition: transform 0.3s ease, background 0.2s ease;
             } 
             .second-whatsapp-action:hover {
                 transform: scale(1.1);
                 color: #343434;
                 background-color: #faf9f6;
-                border: 1px solid #343434;
+                border: 2px solid #343434;
                 font-weight: bold;
             }
             .second-email-action:hover {
                 transform: scale(1.1);
                 color: #343434;
                 background-color: #faf9f6;
-                border: 1px solid #343434;
+                border: 2px solid #343434;
                 font-weight: bold;
             }
             footer {
                 background-color: #343434;
-                padding: 8px;
-                border-radius: 10px;
+                padding: 30px;
                 color: grey;
                 font-size: 13px;
                 margin-top: 20px;
                 width: 100%;
                 text-align: center;
             }
-        @media (max-width: 768px) {
-            .header-section {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-            @media (max-width: 480px) {
+
+
+            @media (max-width: 699px) {
                 .contact-buttons {
                     flex-direction: column;
                     align-items: center;
@@ -142,12 +182,42 @@
                     align-items: center;
                 }
                 .nav-links {
-                    flex-direction: column;
+                    flex-direction: row;
                     align-items: center;
+                    justify-content: center;
+                    text-align: center;
                 }
                 .header-section {
-                    flex-direction: row;
-                    gap: 10px;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0;
+                    gap: 20px;
+                }
+                header {
+                    background-color: #343434;
+                }
+                .image-intro {
+                    display: flex;
+                    flex-direction: column;
+                }
+                ul {
+                    margin-left: 20px;
+                }
+                h1 {
+                    text-align: center;
+                }
+ 
+            }
+            @media (max-width: 1100px) {
+                .image-intro {
+                    margin-right: 30px;
+                    margin-left: 30px;
+                }
+            }
+            @media (max-width: 800px) {
+                .header-section {
+                    gap: 30px;
                 }
             }
                  
@@ -158,31 +228,32 @@
         <div class="header-section">
         <h1>IFEANYI DIGITAL SERVICES </h1>
         <nav role="navigation" class="nav-links">
-            <a href="index.html" class="nav-link" aria-label="Go to home page"> Home </a>
-            <a href="contact.html" class="nav-link" target="_blank" aria-label="Contact me"> Contact </a>
-            <a href="services.html" class="nav-link" target="_blank" aria-label="View our services"> Services </a>
+            <a href="index.html" class="nav-link" aria-label="Go to home page"><i class="fa-solid fa-home"></i> Home </a>
+            <a href="contact.html" class="nav-link" target="_blank" aria-label="Contact me"><i class="fa-solid fa-user"></i> Contact </a>
+            <a href="services.html" class="nav-link" target="_blank" aria-label="View our services"><i class="fa-solid fa-briefcase"></i> Services </a>
         </nav>
         </div>
     </header>
     <main>
+        <div class="main-wrapper">
         <!--hero image-->
+        <div class="image-intro">
         <picture>
             <figure>
             <!--image responsiveness-->
             <source media="(max-width: 368px)" srcset="images/ifeanyi-mobile.jpg">
             <source media="(max-width: 768px)" srcset="images/ifeanyi-tablet.jpg">
             <!--image fallback-->
-            <img src="images/ifeanyi.jpg" alt="A picture of the person that developed this page" style="max-width: 100%; border: 1px solid black; border-radius: 10px; margin-top: 10px;" loading="lazy">
+            <img src="images/ifeanyi.jpg" alt="A picture of the person that developed this page" style="border: 2px solid #343434; border-radius: 10px; margin: 50px 0 50px 0;" loading="lazy" height="500">
             </figure>
         </picture>
         <!--intro section-->
         <section>
+            <div class="intro">
             <h2> Web Developer & Automation Enthusiast</h2>
             <p> I build websites, clean structure systems, and automated tasks. Let's work together.<br>
             Helping people with websites, flyers and typing jobs. Fast delivery and friendly prices. </p>
-        </section> 
-        <hr>
-        <section>
+            <hr>
             <article>
                 <h2> What i do </h2>
                 <ul>
@@ -194,16 +265,22 @@
                 </ul>
             </article>
             <hr>
-            <article>
-                <p> Want to build something together? <br>
-                Let's connect below </p><br>
-            </article>
+            <aside>
+                <p><strong> Want to build something together? <br>
+                 Connect with us below.</strong></p>
+            </aside>
+            </div>
+            </div>
+        </section> 
+        <section>
+           
             <div class="second-contact-buttons">
             <a href="https://github.com/ifeanyijosephh" target="_blank" class="second-Github-action" aria-label="Connect with me on Github"><i class="fa-brands fa-github"></i> Connect on GitHub</a>
             <a href="mailto:ifeanyidigitalservices@gmail.com" class="second-email-action" aria-label="Send me an email"> <i class="fa-solid fa-envelope"></i> Email me </a>
             <a href="https://wa.me/+2347043936131" target="_blank" class="second-whatsapp-action" aria-label="Chat with me on Whatsapp"><i class="fa-brands fa-whatsapp"></i> Chat on Whatsapp</a>
             </div>
         </section>
+        </div>
     </main>
     <footer>
         <p>&copy; Ifeanyi digital services, 2025.<br> All rights reserved.</p>
