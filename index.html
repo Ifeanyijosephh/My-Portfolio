@@ -26,7 +26,7 @@
                 box-sizing: border-box;
             }
             body {
-                font-family: 'Roboto';
+                font-family: 'Roboto', sans-serif;
                 background-color: #faf9f6;
                 color: #343434;
             }
@@ -34,11 +34,15 @@
                 width: 100%;
                 box-sizing: border-box;
                 height: 100%;
+                margin-top: 120px;
             }
             header {
                 color: #faf9f6;
                 padding: 10px;
-                
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
             }
             h1 {
                 text-align: left;
@@ -244,7 +248,7 @@
             <source media="(max-width: 368px)" srcset="images/ifeanyi-mobile.jpg">
             <source media="(max-width: 768px)" srcset="images/ifeanyi-tablet.jpg">
             <!--image fallback-->
-            <img src="images/ifeanyi.jpg" alt="A picture of the person that developed this page" style="border: 2px solid #343434; border-radius: 10px; margin: 50px 0 50px 0;" loading="lazy" height="500">
+            <img src="images/ifeanyi.jpg" alt="A picture of the person that developed this page" style="border: 2px solid #343434; border-radius: 10px; margin: 50px 0 50px 0;" loading="eager" height="500">
             </figure>
         </picture>
         <!--intro section-->
