@@ -19,4 +19,4 @@ This is a fully responsive personal website built using pure HTML and CSS, with 
 <h2>Contact Me:</h2>
 -Connect with me on <a href="https://x.com/ifeanyiijosephh" target="_blank">X/Twitter</a><br>
 -Send me an <a href="mailto:ifeanyidigitalserevices@gmail.com" target="_blank"> E-mail</a><br>
--Chat with me on <a href="https//wa.me/+2347043936131"> Whatsapp</a><br>
+-Chat with me on <a href="https://wa.me/+2347043936131"> Whatsapp</a><br>
