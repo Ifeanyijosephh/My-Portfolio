@@ -17,6 +17,6 @@ This is a fully responsive personal website built using pure HTML and CSS, with 
 <b>Ifeanyi Joseph </b><br>
 <p> This project is part of my journey to becoming a world-class front-end developer. Soon, I'll be collabrating with back-end engineers to build full stack web applications and real world platforms that provide value and income.</p>
 <h2>Contact Me:</h2>
--Twitter/X profile link https://x.com/ifeanyiijosephh<br>
--Email address <a href="mailto:ifeanyidigitalservices@gmail.com">Ifeanyidigitalservices@gmail.com</a><br>
+-Connect with us on <a href="https://x.com/ifeanyiijosephh" target="_blank"> Twitter/X </a><br>
+-Send an<a href="mailto:ifeanyidigitalservices@gmail.com" target="_blank"> Email</a> to us<br>
 -Chat with me on <a href="https//wa.me/+2347043936131" target="_blank"> Whatsapp<br>
