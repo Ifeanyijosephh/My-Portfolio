@@ -20,174 +20,7 @@
         <meta name="google-site-verification" content="yrjoCYYzWIblbdsxBEd57Kd4OCPOsdUH2JT0SVM0V0M" />
         <link rel="sitemap" href="sitemap.xml" type="application/xml">
         <title> Ifeco digital services</title>
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            body {
-                font-family: 'Poppins', sans-serif;
-                background-color: #faf9f6;
-                color: #343434;
-            }
-            .main-wrapper {
-                width: 100%;
-                box-sizing: border-box;
-                height: 100%;
-                margin-top: 120px;
-            }
-            header {
-                color: #faf9f6;
-                padding: 10px;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-            }
-            h1 {
-                text-align: left;
-                font-family: 'Poppins', sans-serif;
-            }
-            .header-section {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-                background-color: #343434;
-                padding: 10px 30px 10px 30px;
-                border-radius: 25px;
-            }
-            .nav-links {
-                display: flex;
-                flex-direction: row;
-                gap: 15px;
-                flex-wrap: nowrap;
-                align-items: center;
-            }
-            .nav-link {
-                color: #faf9f6;
-                text-decoration: none;
-                padding: 5px;
-                font-weight: bold;
-                letter-spacing: 1px;
-                transition: transform 0.3s ease, background 0.2s ease;
-            }
-
-            /*underline effect*/
-
-            .nav-link::after {
-                content: "";
-                position: absolute;
-                left: 50%;
-                bottom: 0;
-                transform: translateX(-50%) scale(0);
-                transform-origin: center; 
-                width: 100%;
-                height: 2px;
-                background-color:  #faf9f6;
-                transition: transform 0.3s ease;
-            }
-            .nav-link:hover::after {
-                transform: translateX(-50%) scale(1);
-            }
-            .nav-link:hover {
-                font-weight: bold;
-                transform: scale(1.1);
-            }
-            .intro {
-                color: #343434;
-                padding: 20px;
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-            }
-            aside {
-                margin-top: 30px;
-            }
-            .image-intro {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 10%;
-                margin-bottom: 30px;
-
-            }
-            footer {
-                background-color: #343434;
-                padding: 30px;
-                color: grey;
-                font-size: 13px;
-                margin-top: 20px;
-                width: 100%;
-                text-align: center;
-            }
-            .footer-icons {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-                margin-bottom: 20px;
-                margin-top: 20px;
-            }
-            .footer-icons > a {
-                color: grey;
-            }
-            .envelope-icon, .github-icon, .whatsapp-icon, .twitter-icon {
-                border: 1px solid;
-                padding: 15px;
-                border-radius: 50%;
-            }
-
-            @media (max-width: 699px) {
-                .nav-links {
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                }
-                .header-section {
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 0;
-                    gap: 20px;
-                }
-                body {
-                    margin-top: 200px;
-                }
-                header {
-                    background-color: #343434;
-                }
-                .image-intro {
-                    display: flex;
-                    flex-direction: column;
-                }
-                ul {
-                    margin-left: 20px;
-                }
-                h1 {
-                    text-align: center;
-                }
-                picture {
-                    margin-left: 20px;
-                    margin-right: 20px;
-                }
- 
-            }
-            @media (max-width: 1100px) {
-                .image-intro {
-                    margin-right: 30px;
-                    margin-left: 30px;
-                }
-            }
-            @media (max-width: 800px) {
-                .header-section {
-                    gap: 30px;
-                }
-            }
- 
-                 
-        </style>
+        <link rel="stylesheet" href="index.css">
     </head>
 <body>
     <header>
@@ -204,15 +37,15 @@
         <div class="main-wrapper">
         <!--hero image-->
         <div class="image-intro">
-        <picture>
-            <figure>
-            <!--image responsiveness-->
-            <source media="(max-width: 368px)" srcset="images/ifeanyi-mobile.jpg">
-            <source media="(max-width: 768px)" srcset="images/ifeanyi-tablet.jpg">
-            <!--image fallback-->
-            <img src="images/ifeanyi.jpg" alt="Ifeanyi Joseph" style="border: 2px solid #343434; border-radius: 10px; margin: 50px 0 50px 0;" height="500">
-            </figure>
-        </picture>
+            <picture>
+                <figure>
+                    <!--image responsiveness-->
+                    <source media="(max-width: 368px)" srcset="images/ifeanyi-mobile.jpg">
+                    <source media="(max-width: 768px)" srcset="images/ifeanyi-tablet.jpg">
+                    <!--image fallback-->
+                    <img src="images/ifeanyi.jpg" alt="Ifeanyi Joseph" style="border: 2px solid #343434; border-radius: 10px; margin: 50px 0 50px 0;" height="500">
+                </figure>
+            </picture>
         <!--intro section-->
         <section>
             <div class="intro">
