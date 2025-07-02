@@ -203,6 +203,24 @@
                 picture {
                     margin: 40px;
                 }
+            .intro {
+                animation-name: intro;
+                animation-iteration-count: 1;
+                animation-timing-function: ease;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes intro {
+                from {
+                    transform: translatex(-500px);
+                    opacity: 0;
+                }
+                to {
+                    transform: translatex(0);
+                    opacity: 1;
+                }
+            }
+            }
             }
             @media (min-width: 689px) {
                 .header-section {
