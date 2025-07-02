@@ -142,6 +142,9 @@
             aside {
                 margin-top: 30px;
             }
+            ul {
+                margin: 20px;
+            }
             .image-intro {
                 display: flex;
                 justify-content: center;
