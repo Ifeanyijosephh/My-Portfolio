@@ -103,10 +103,12 @@
             }
             @keyframes intro {
                 from {
-                    transform: translatex(-600px);
+                    transform: translatex(50px);
+                    opacity: 0;
                 }
                 to {
                     transform: translatex(0);
+                    opacity: 1;
                 }
             }
             /*underline effect*/
