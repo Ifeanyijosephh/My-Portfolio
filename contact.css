@@ -104,10 +104,10 @@ header {
                 
             }
             form {
-                padding: 20px;
+                padding: 15px;
             }
             textarea {
-                max-width: 600px;
+                max-width: 800px;
                 height: 500px; 
                 padding: 12px;
                 resize: none;
@@ -118,7 +118,7 @@ header {
             }
             input {
                 padding: 8px;
-                max-width: 600px;
+                max-width: 800px;
                 border-radius: 10px;
                 border: 1px solid #343434;
                 outline: none;
@@ -146,6 +146,22 @@ header {
                 font-weight: bold;
                 text-align: center;
                 margin-top: 20px;
+            }
+            .secondheader {
+                padding: 15px;
+                animation-name: second;
+                animation-duration: 2s;
+                animation-timing-function: ease;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;
+            }
+            @keyframes second {
+                from {
+                    transform: translateX(-500px);
+                }
+                to {
+                    transform: translateX(0);
+                }
             }
             /*
             footer {
