@@ -103,7 +103,7 @@
             }
             @keyframes intro {
                 from {
-                    transform: translatex(50px);
+                    transform: translatex(-50px);
                     opacity: 0;
                 }
                 to {
@@ -227,7 +227,7 @@
             }
             @keyframes intro {
                 from {
-                    transform: translatex(50px);
+                    transform: translatex(-50px);
                     opacity: 0;
                 }
                 to {
