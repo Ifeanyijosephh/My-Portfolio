@@ -7,6 +7,7 @@
                 font-family: 'Poppins', sans-serif;
                 background-color: #faf9f6;
                 color: #343434;
+                overflow-x: hidden;
             }
             .main-wrapper {
                 width: 100%;
@@ -102,7 +103,7 @@
             }
             @keyframes intro {
                 from {
-                    transform: translatex(600px);
+                    transform: translatex(-600px);
                 }
                 to {
                     transform: translatex(0);
@@ -215,5 +216,22 @@
                 main {
                     padding: 30px;
                 }
+                .intro {
+                animation-name: intro;
+                animation-iteration-count: 1;
+                animation-timing-function: ease;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes intro {
+                from {
+                    transform: translatex(50px);
+                    opacity: 0;
+                }
+                to {
+                    transform: translatex(0);
+                    opacity: 1;
+                }
+            }
             }
  
