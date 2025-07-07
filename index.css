@@ -37,7 +37,8 @@
             }
             @keyframes firsthead {
                 from {
-                    transform: translateY(-150px);
+                    transform: translateY(-50px);
+                    opacity: 0;
                 }
                 to {
                     transform: translateY(0);
@@ -49,9 +50,25 @@
                 align-items: center;
                 justify-content: space-between;
                 background-color: #343434;
-                padding: 10px 30px 10px 30px;
                 border-radius: 25px;
+                padding: 10px 30px 10px 30px;
                 
+            }
+            /* company logo */
+            .companyLogo {
+                display: none;
+                animation-name: logo;
+                animation-duration: 1.5s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+                animation-delay: 0;
+                animation-timing-function: ease;
+            }
+            @keyframes logo {
+                from {
+                    transform: translateX(-100px);
+                    opacity: 0;
+                }
             }
             .nav-links {
                 display: flex;
@@ -88,7 +105,20 @@
             .hamburger {
                 display: none;
                 cursor: pointer;
-
+                /* animation */
+                animation-name: hamburger;
+                animation-duration: 1.4s;
+                animation-timing-function: ease;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+            @keyframes hamburger {
+                from {
+                    transform: translatex(100px);
+                }
+                to {
+                    transform: translatex(0);
+                }
             }
             .bar {
                 display: block;
@@ -99,62 +129,6 @@
                 transition: all 0.3s ease-in-out;
                 background-color: white;
             }
-
-            /* Hamburger Icon for nav menu
-            .hamburger {
-                display: none;
-                flex-direction: column;
-                gap: 5px;
-                cursor: pointer;
-                z-index: 1001;
-            }
-            .hamburger.active div:nth-child(1) {
-                transform: rotate(45deg) translate(5px, 5px);
-            }
-            .hamburger.active div:nth-child(2) {
-                opacity: 0;
-            }
-            .hamburger.active div:nth-child(3) {
-                transform: rotate(-45deg) translate(5px, -5px);
-            }
-            .mobile-menu {
-                position: fixed;
-                top: 0;
-                left: -100%;
-                width: 100%;
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 30px;
-                transition: left 0.3s ease;
-                z-index: 1000;
-            }
-            .mobile-menu.active {
-                left: 0;
-            
-            }
-            .menu {
-                display: none;
-                flex-direction: column;
-                gap: 10px;
-            }
-            .menu a {
-                color: #faf9f6;
-                text-decoration: none;
-            }
-            .hamburger {
-                cursor: pointer;
-                display: flex;
-                flex-direction: column;
-                gap: 4px;
-            }
-            .hamburger div {
-                width: 25px;
-                height: 30px;
-                background: #faf9f6;
-            } */
             picture {
                 animation-name: picture;
                 animation-iteration-count: 1;
@@ -222,14 +196,6 @@
             ul {
                 margin: 20px;
             }
-            .image-intro {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 10%;
-                margin-bottom: 30px;
-
-            }
             footer {
                 background-color: #343434;
                 padding: 30px;
@@ -262,15 +228,25 @@
                      align-items: center;
                      flex-direction: row;
                      gap: 10px;
+                     padding: 3px;
+                }
+                .companyLogo {
+                    display: block;
+                    width: 80px;
+                    height: 80px;
+                    margin-left: -20px;
+                    margin-top: 0;
+                    margin-bottom: 0;
                 }
                 h1 {
                     text-align: left;
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
+                    margin-left: -30px;                    
                 }
-                .image-intro {
+               .image-intro {
                     display: flex;
                     flex-direction: column;
-                }
+                } 
                 .intro {
                     padding: 30px;
                 }
@@ -284,7 +260,7 @@
                 picture {
                     margin: 40px;
                 }
-                 img {
+                img {
                  margin-top: 50px;
                  margin-right: 10px;
                  margin-left: 10px;
@@ -348,7 +324,7 @@
                     text-align: center;
                 }
                 h1 {
-                    font-size: 2rem;
+                    font-size: 1.6rem;
                 }
                 main {
                     padding: 30px;
@@ -370,6 +346,13 @@
                     transform: translatex(0);
                     opacity: 1;
                 }
+            }
+            .image-intro {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10%;
+                margin-bottom: 30px; 
             }
     
  
