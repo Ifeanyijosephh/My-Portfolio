@@ -58,7 +58,7 @@
             .companyLogo {
                 display: none;
                 animation-name: logo;
-                animation-duration: 1.5s;
+                animation-duration: 1.4s;
                 animation-iteration-count: 1;
                 animation-fill-mode: forwards;
                 animation-delay: 0;
@@ -101,7 +101,7 @@
             img {
                  margin: 50px 0 50px 50px;
             }
-                        /* HAMBURGER ICON FOR NAV BAR */
+             /* HAMBURGER ICON FOR NAV BAR */
             .hamburger {
                 display: none;
                 cursor: pointer;
