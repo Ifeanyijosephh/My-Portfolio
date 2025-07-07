@@ -76,6 +76,22 @@ header {
                     transform: translateY(0);
                 }
             }
+            /* HAMBURGER ICON FOR NAV BAR */
+            .hamburger {
+                display: none;
+                cursor: pointer;
+
+            }
+            .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                background-color: white;
+            }
+
  
             /*underline effect*/
 
@@ -254,19 +270,15 @@ header {
                 .header-section {
                     display: flex;
                     align-items: center;
-                    flex-direction: column;
+                    flex-direction: row;
                     gap: 10px;
                 }
                 h1 {
-                    text-align: center;
+                    text-align: left;
                     font-size: 1.5rem;
                 }
                 header {
                     background-color: #343434;
-                }
-                .nav-links {
-                    text-align: center;
-                    font-size: 1rem;
                 }
                 input {
                     width: 100%;
@@ -274,6 +286,37 @@ header {
  
                 textarea {
                     width: 100%;
+                }
+                .hamburger {
+                    display: block;
+                    cursor: pointer;
+                }
+                .hamburger.active .bar:nth-child(2) {
+                    opacity: 0;
+                }
+                .hamburger.active .bar:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+                .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+                }
+                .nav-links {
+                    position: fixed;
+                    left: -100%;
+                    top: 0;
+                    gap: 0;
+                    flex-direction: column;
+                    background-color: #343434;
+                    width: 60%;
+                    height: 100vh;
+                    text-align: center; 
+                    transition: 0.3s;
+                }
+                .nav-link {
+                    margin: 16px 0;
+                }
+                .nav-links.active {
+                    left: 0;
                 }
             }
             @media (min-width: 689px) {

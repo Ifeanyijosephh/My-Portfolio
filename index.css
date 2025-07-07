@@ -24,6 +24,7 @@
                 left: 0;
                 width: 100%;
                 z-index: 1000;
+                
             }
             h1 {
                 text-align: left;
@@ -50,6 +51,7 @@
                 background-color: #343434;
                 padding: 10px 30px 10px 30px;
                 border-radius: 25px;
+                
             }
             .nav-links {
                 display: flex;
@@ -78,13 +80,88 @@
                 to {
                     transform: translateY(0);
                 }
+            } 
+            img {
+                 margin: 50px 0 50px 50px;
             }
+                        /* HAMBURGER ICON FOR NAV BAR */
+            .hamburger {
+                display: none;
+                cursor: pointer;
+
+            }
+            .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                background-color: white;
+            }
+
+            /* Hamburger Icon for nav menu
+            .hamburger {
+                display: none;
+                flex-direction: column;
+                gap: 5px;
+                cursor: pointer;
+                z-index: 1001;
+            }
+            .hamburger.active div:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            .hamburger.active div:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger.active div:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+            .mobile-menu {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                transition: left 0.3s ease;
+                z-index: 1000;
+            }
+            .mobile-menu.active {
+                left: 0;
+            
+            }
+            .menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .menu a {
+                color: #faf9f6;
+                text-decoration: none;
+            }
+            .hamburger {
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+            .hamburger div {
+                width: 25px;
+                height: 30px;
+                background: #faf9f6;
+            } */
             picture {
                 animation-name: picture;
                 animation-iteration-count: 1;
                 animation-timing-function: ease;
                 animation-duration: 2s;
                 animation-fill-mode: forwards;
+                 
             }
             @keyframes picture {
                 from {
@@ -111,8 +188,7 @@
                     opacity: 1;
                 }
             }
-            /*underline effect*/
-
+             /*underline effect */
             .nav-link::after {
                 content: "";
                 position: absolute;
@@ -131,10 +207,11 @@
             .nav-link:hover {
                 font-weight: bold;
                 transform: scale(1.1);
-            }
+            } 
+
             .intro {
                 color: #343434;
-                padding: 20px;
+                padding-right: 20px;
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
@@ -161,6 +238,7 @@
                 margin-top: 20px;
                 width: 100%;
                 text-align: center;
+                
             }
             .footer-icons {
                 display: flex;
@@ -182,11 +260,11 @@
                  .header-section {
                      display: flex;
                      align-items: center;
-                     flex-direction: column;
+                     flex-direction: row;
                      gap: 10px;
                 }
                 h1 {
-                    text-align: center;
+                    text-align: left;
                     font-size: 1.5rem;
                 }
                 .image-intro {
@@ -206,6 +284,12 @@
                 picture {
                     margin: 40px;
                 }
+                 img {
+                 margin-top: 50px;
+                 margin-right: 10px;
+                 margin-left: 10px;
+                }
+                
             .intro {
                 animation-name: intro;
                 animation-iteration-count: 1;
@@ -223,7 +307,37 @@
                     opacity: 1;
                 }
             }
-            }
+                            .hamburger {
+                    display: block;
+                    cursor: pointer;
+                }
+                .hamburger.active .bar:nth-child(2) {
+                    opacity: 0;
+                }
+                .hamburger.active .bar:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+                .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+                }
+                .nav-links {
+                    position: fixed;
+                    left: -100%;
+                    top: 0;
+                    gap: 0;
+                    flex-direction: column;
+                    background-color: #343434;
+                    width: 60%;
+                    height: 100vh;
+                    text-align: center; 
+                    transition: 0.3s;
+                }
+                .nav-link {
+                    margin: 16px 0;
+                }
+                .nav-links.active {
+                    left: 0;
+                }
             }
             @media (min-width: 689px) {
                 .header-section {
@@ -238,13 +352,14 @@
                 }
                 main {
                     padding: 30px;
-                }
+                } 
                 .intro {
                 animation-name: intro;
                 animation-iteration-count: 1;
                 animation-timing-function: ease;
                 animation-duration: 2s;
                 animation-fill-mode: forwards;
+                }
             }
             @keyframes intro {
                 from {
@@ -256,5 +371,5 @@
                     opacity: 1;
                 }
             }
-            }
+    
  

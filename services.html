@@ -24,12 +24,19 @@
         <header>
             <div class="header-section">
                 <h1>IFECO DIGITAL SERVICES</h1>
-                <nav class="nav-links" role="navigation">
+                <nav id="navMenu" class="nav-links">
                     <a href="index.html" class="nav-link" target="_blank"><i class="fa-solid fa-home"></i> Home</a>
-                    <a href="contact.html" class="nav-link" target="_blank"><i class="fa-solid fa-user"></i> Contact</a>
-                    <a href="services.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Services</a>
-                </nav>
+                    <a href="services.html" class="nav-link" target="_blank"><i class="fa-solid fa-briefcase"></i> Services</a>
+                    <a href="contact.html" class="nav-link"><i class="fa-solid fa-user"></i> Contact</a>
+                    <a href="about-us.html" class="nav-link" target="_blank" aria-label="About Us"><i class="fa-solid fa-info-circle"></i> About Us </a>
+                </nav> 
+                <div id="hamburger" class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+            </div>
+            <script src="script.js"></script>
         </header>
             <main role="main">
                 <section class="services-section">
@@ -45,7 +52,7 @@
                         <li>Clean and fast typing jobs</li>
                         <li>Graphic designs</li>
                     </ul><br>
-                    <p><strong>For more details, please contact us.</strong><br>
+                    <p><strong>For more details, please <a href=contact.html>contact us.</a></strong><br>
                     <i><span style="color: grey; display: inline-block; margin-top: 50px;">Other services coming soon..</span></i> </p>
                     </div>
                 </section>
