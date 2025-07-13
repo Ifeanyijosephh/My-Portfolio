@@ -13,7 +13,7 @@
                 width: 100%;
                 box-sizing: border-box;
                 height: 100%;
-                margin-top: 120px;
+               /* margin-top: 120px; */
   
             }
             header {
@@ -123,7 +123,8 @@
             .bar {
                 display: block;
                 width: 25px;
-                height: 3px;
+                height: 5px;
+                border-radius: 5px;
                 margin: 5px auto;
                 -webkit-transition: all 0.3s ease-in-out;
                 transition: all 0.3s ease-in-out;
@@ -135,6 +136,7 @@
                 animation-timing-function: ease;
                 animation-duration: 2s;
                 animation-fill-mode: forwards;
+                
                  
             }
             @keyframes picture {
@@ -145,8 +147,12 @@
                     transform: trasnlatex(0);
                 }
             }
-            .intro {
+        /*.introSection {
+            
+        }*/
+           /* .intro {
                 animation-name: intro;
+                line-height: 1.8rem;
                 animation-iteration-count: 1;
                 animation-timing-function: ease;
                 animation-duration: 2s;
@@ -161,7 +167,7 @@
                     transform: translatex(0);
                     opacity: 1;
                 }
-            }
+            } */
              /*underline effect */
             .nav-link::after {
                 content: "";
@@ -189,18 +195,20 @@
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
+                margin-top: 10px;
             }
             aside {
                 margin-top: 30px;
             }
-            ul {
-                margin: 20px;
+            ul li {
+                list-style: square;
+                margin: 0.8rem;
             }
             footer {
                 background-color: #343434;
                 padding: 30px;
                 color: grey;
-                font-size: 13px;
+                font-size: 0.9rem;
                 margin-top: 20px;
                 width: 100%;
                 text-align: center;
@@ -208,6 +216,7 @@
             }
             .footer-icons {
                 display: flex;
+                font-size: 1rem;
                 justify-content: center;
                 gap: 20px;
                 margin-bottom: 20px;
@@ -230,18 +239,22 @@
                      gap: 10px;
                      padding: 3px;
                 }
+                .main-wrapper {
+                    margin-top: 80px;
+                }
                 .companyLogo {
-                    display: block;
-                    width: 80px;
-                    height: 80px;
-                    margin-left: -20px;
-                    margin-top: 0;
-                    margin-bottom: 0;
+                    display: inline-block;
+                    width: 50px;
+                    margin: 0;
+                }
+                #FirstHeading {
+                 font-size: 1.3rem;
+                 line-height: 1.3rem;
                 }
                 h1 {
                     text-align: left;
                     font-size: 1.4rem;
-                    margin-left: -30px;                    
+                    /*margin-left: -30px; */                   
                 }
                .image-intro {
                     display: flex;
@@ -257,8 +270,12 @@
                     text-align: center;
                     font-size: 1rem;
                 }
+                #HomeNav {
+                    margin-top: 80px;
+                }
                 picture {
-                    margin: 40px;
+                    margin: 0 40px 0 40px;
+
                 }
                 img {
                  margin-top: 50px;
@@ -266,7 +283,7 @@
                  margin-left: 10px;
                 }
                 
-            .intro {
+          /*  .intro {
                 animation-name: intro;
                 animation-iteration-count: 1;
                 animation-timing-function: ease;
@@ -282,7 +299,7 @@
                     transform: translatex(0);
                     opacity: 1;
                 }
-            }
+            } */ 
                             .hamburger {
                     display: block;
                     cursor: pointer;
@@ -314,6 +331,9 @@
                 .nav-links.active {
                     left: 0;
                 }
+                picture  h1 {
+                margin-left: 50px;
+                }
             }
             @media (min-width: 689px) {
                 .header-section {
@@ -329,12 +349,22 @@
                 main {
                     padding: 30px;
                 } 
+                .main-wrapper {
+                    margin-top: 80px;
+                }
                 .intro {
                 animation-name: intro;
                 animation-iteration-count: 1;
                 animation-timing-function: ease;
                 animation-duration: 2s;
                 animation-fill-mode: forwards;
+                }
+                picture  h1 {
+                    margin-left: 50px;
+                }
+                .intro-section {
+                    justify-self: center;
+                    align-self: center;
                 }
             }
             @keyframes intro {

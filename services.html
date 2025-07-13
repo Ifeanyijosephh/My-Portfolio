@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Ifeco digital services">
+        <meta name="description" content="Ifeco digital services, web development, ui/ux designs, full web management, SEO optimization, clean and fast typing jobs, graphic desgins">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="author" content="Ifeanyi 08072500911">
         <meta property="og:title" content="Ifeco Digital Services Portfolio">
@@ -12,25 +12,26 @@
         <meta property="og:url" content="https://example.com/ifeanyi-portfolio">
         <meta property="og:type" content="website">
         <meta name="keywords" content="Ifeco, portfolio, web developer, automation, digital services, contact">
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" type="image/png" sizes="32x32">
+        <link rel="icon" href="images/my-logo.png" type="image/png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+icons">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
-        <title> Ifeanyi digital service </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+        <title> Ifeco Digital Service Page </title>
         <link rel="stylesheet" href="services.css">
     </head>
     <body>
         <header>
             <div class="header-section">
                 <img src="images/my-logo.png" alt="Company Logo" class="companyLogo"> 
-                <h1>IFECO DIGITAL SERVICES</h1>
+                <h1 id="FirstHeading">IFECO DIGITAL SERVICES</h1>
                 <nav id="navMenu" class="nav-links">
-                     
-                    <a href="index.html" class="nav-link" target="_blank"><i class="fa-solid fa-home"></i> Home</a>
+                    <a href="index.html" class="nav-link" target="_blank" id="HomeNav"><i class="fa-solid fa-home"></i> Home</a>
                     <a href="services.html" class="nav-link" target="_blank"><i class="fa-solid fa-briefcase"></i> Services</a>
                     <a href="contact.html" class="nav-link"><i class="fa-solid fa-user"></i> Contact</a>
-                    <a href="about-us.html" class="nav-link" target="_blank" aria-label="About Us"><i class="fa-solid fa-info-circle"></i> About Us </a>
+                    <a href="about.html" class="nav-link" target="_blank" aria-label="About Us"><i class="fa-solid fa-info-circle"></i> About Us </a>
                 </nav> 
                 <div id="hamburger" class="hamburger">
                 <span class="bar"></span>
@@ -43,26 +44,26 @@
             <main role="main">
                 <section class="services-section">
                     <div class="service">
-                    <h2>Our Services <i class="fa-solid fa-briefcase"></i></h2><br>
-                    <p><strong>At <strong>Ifeco digital services </strong> we offer a range of digital services to help you succeed online:</strong></p><br>
+                    <h2 data-aos="fade-down" data-aos-duration="1500">Our Services <i class="fa-solid fa-briefcase"></i></h2><br>
+                    <p data-aos="fade-down" data-aos-duration="1500"><strong>At <strong>Ifeco digital services </strong> we offer a range of digital services to help you succeed online:</strong></p><br>
                     <hr>
                     <div class="serviceBoxes">
-                        <div class="serviceBox">      
+                        <div class="serviceBox" data-aos="fade-up" data-aos-duration="1500">      
                             <p><b>Web Development</b><br><br><br> Crafting clean, responsive, and fast websites tailored to your brand.</p>
                         </div>
-                        <div class="serviceBox">
+                        <div class="serviceBox" data-aos="fade-up" data-aos-duration="1500">
                             <p><b>UI/UX Designs</b><br><br><br> Designing user-friendly interfaces that attract and retain customers.</p>
                         </div>
-                        <div class="serviceBox">
+                        <div class="serviceBox" data-aos="fade-up" data-aos-duration="1500">
                             <p><b>Full web management</b><br><br><br> Full development to maintenance -we handle it all, so you can focus on your goals.</p></p>
                         </div>
-                        <div class="serviceBox">
+                        <div class="serviceBox" data-aos="fade-up" data-aos-duration="1500">
                             <p><b>SEO Optimization</b><br><br><br>Improving your websites visibility to reach more people organically.</p> 
                         </div>
-                        <div class="serviceBox">
+                        <div class="serviceBox" data-aos="fade-up" data-aos-duration="1500">
                             <p><b>Clean and fast typing jobs</b><br><br><br>Fast, accurate typing and document formatting services for business and students.</p></p>
                         </div>
-                        <div class="serviceBox">
+                        <div class="serviceBox" data-aos="fade-up" data-aos-duration="1500">
                             <p><b>Graphic designs</b><br><br><br> Attractive flyers and promotional graphics for your online presence.</p> 
                         </div>
                     </div><br>
@@ -81,5 +82,9 @@
                 </div>
                 <p>&copy;Ifeco Digital Services, 2025. <br>All rights reserved.</p>
             </footer>
+            <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+                <script> 
+        AOS.init();    
+    </script>
     </body>
 </html>

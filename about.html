@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="About Ifeco digital services, a web developer in nigeria, HTML, CSS, JavaScript, Front-End Developer">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="author" content="Ifeanyi 08072500911">
+        <meta property="og:title" content="Ifeco Digital Services Portfolio">
+        <meta property="og:description" content="Ifeco Digital Services - Web Developer & Automation Enthusiast">
+        <meta property="og:image" content="images/ifeanyi.jpg">
+        <meta property="og:url" content="https://example.com/ifeanyi-portfolio">
+        <meta property="og:type" content="website">
+        <meta name="keywords" content="Ifeco, portfolio, web developer, automation, digital services, contact">
+        <link rel="icon" type="image/png" sizes="32x32">
+        <link rel="icon" href="images/my-logo.png" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+        <title> Ifeco Digital Service About Page </title>
+        <link rel="stylesheet" href="about-style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-section">
+                <!--<h1>IFECO DIGITAL SERVICES </h1>-->
+                <img src="images/my-logo.png" alt="Company Logo" class="companyLogo">
+                <h1 id="FirstHeading">IFECO DIGITAL SERVICES</h1>
+                <nav id="navMenu" class="nav-links">
+                    <a href="index.html" class="nav-link" target="_blank" id="HomeNav"><i class="fa-solid fa-home"></i> Home</a>
+                    <a href="services.html" class="nav-link" target="_blank"><i class="fa-solid fa-briefcase"></i> Services</a>
+                    <a href="contact.html" class="nav-link" target="_blank"><i class="fa-solid fa-user"></i> Contact</a>
+                    <a href="about.html" class="nav-link" target="_self" aria-label="About Us"><i class="fa-solid fa-info-circle"></i> About Us </a>
+                </nav> 
+                <div id="hamburger" class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            </div>
+            <script src="script.js"></script>
+        </header>
+        <main>
+            <section class="aboutHero">
+                <h1 id="AboutMe"> About Me </h1>
+                    <div class="aboutIntro">
+                        <div class="aboutImage">
+                            <picture>
+                                <figure data-aos="zoom-in" data-aos-duration="1500">
+                                    <!--Image Responsiveness-->
+                                    <source media="(max-width: 368px)" srcset="images/ifeanyi-mobile.jpg">
+                                    <source media="(max-width: 768px)" srcset="images/ifeanyi-tablet.jpg">
+                                    <!--Image fallback-->
+                                    <img src="images/ifeanyi.jpg" alt="Ifeanyi Joseph" style="border: 2px solid #343434; border-radius: 10px;" height="500">
+                                </figure>
+                             </picture>
+                        </div>
+                        <div class="aboutText">
+                            <article>
+                                <h3 id="HeadingForLarge"> About Me </h3>
+                                <div data-aos="fade-up" data-aos-duration="1500">
+                                <p> I'm a <strong>Front-End Developer</strong> passionate about building clean, responsive, and user friendly websites that bring ideas to life.
+                                <br><br> </div>
+                                <div data-aos="fade-up" data-aos-duration="1500">I specialise in <strong> HTML, CSS and JavaScript</strong>, with a growing knowledge in back-end technologies, allowing me to build web solutions that are both 
+                                attractive and functional. </div>
+                                <br><br>
+                                <div data-aos="fade-up" data-aos-duration="1500">
+                                I love solving problems and creating desgins that leave lasting impressions on users. My approach combines attention to detail, a clear understanding of user experience, and strong technical skills to work that stands out.
+                                <br><br></div>
+                                <div data-aos="fade-up" data-aos-duration="1500">
+                                When i am not coding, I spend my time learning new technologies, improving my craft, and supporting others with their digital needs - from typing to graphic designs.
+                                <br><br> 
+                                <div data-aos="fade-up" data-aos-duration="1500">
+                                I believe every business and individual derserves a strong online presence that truly reflects their goals and personality. That's why I commit to delivering projects with excellence, honesty, and friendly service.</div>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+            </section>
+            <hr id="horizontal">
+            <section class="InSections">
+            <div class="aboutMission" data-aos="fade-up" data-aos-duration="1500">
+                <h2> My Mission </h2>
+                <blockquote> 
+                    To help businesses and individuals establish a strong online presence with websites and designs that reflects their brand and connect with their audience.
+                </blockquote>
+            </div>
+            <div class="aboutWhy" data-aos="fade-up" data-aos-duration="1500">
+                <h2> Why Work With Me?</h2>
+                <ul>
+                    <li>I value clarity and communication</li>
+                    <li>I deliver projects fast without compromising quality</li>
+                    <li>I treat every project like it's my own, ensuring it speaks your brand's language </li>
+                    <li>I offer friendly pricing because i believe everyone derserves a great online presence</li>
+                </ul>
+            </div>
+            <div class="aboutContact" data-aos="fade-up" data-aos-duration="1500">
+                <h2>
+                    Let's Connect
+                </h2>
+                <p> Whether you're looking to build your website, create deigital designs, or need typing services done efficiently, I'm here 
+                    to help you achieve your goals.
+                </p>
+                <a href="contact.html" class="cta-button" data-aos="fade-up" data-aos-duration="1500"> Contact Me </a>
+            </div>
+            </div>
+        </main>
+        <footer>
+            <p>Contact and connect with us through the following channels</p>
+                <div class="footer-icons">
+                <a href="mailto:ifecodigitalservices@gmail.com" target="_blank"><i class="fa-solid fa-envelope envelope-icon"></i></a>
+                <a href="https://github.com/ifeanyijosephh" target="_blank"><i class="fa-brands fa-github github-icon"></i></a>
+                <a href="https://wa.me/2347043936131" target="_blank"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+                <a href="https://x.com/ifeanyiijosephh" target="_blank"><i class="fa-brands fa-twitter twitter-icon"></i></a>
+                </div>
+            <p>&copy;Ifeco Digital Services, 2025. <br>All rights reserved.</p>
+        </footer> 
+                    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+                <script> 
+        AOS.init();    
+    </script>
+    </body>
+</html> 

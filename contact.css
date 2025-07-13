@@ -80,12 +80,12 @@ header {
             .hamburger {
                 display: none;
                 cursor: pointer;
-
             }
             .bar {
                 display: block;
                 width: 25px;
-                height: 3px;
+                border-radius: 5px;
+                height: 5px;
                 margin: 5px auto;
                 -webkit-transition: all 0.3s ease-in-out;
                 transition: all 0.3s ease-in-out;
@@ -176,13 +176,10 @@ header {
 
             }
             .btn {
-                padding: 6px;
-                border-radius: 10px;
+                padding: 0.8rem;
                 border: none;
                 background-color: #343434;
                 color: #faf9f6;
-                font-weight: bold;
-                letter-spacing: 1px;
                 cursor: pointer;
                 transition: transform 0.3s ease, background 0.2s ease;
             }
@@ -230,7 +227,7 @@ header {
                 background-color: #343434;
                 padding: 30px;
                 color: grey;
-                font-size: 13px;
+                font-size: 0.9rem;
                 margin-top: 20px;
                 width: 100%;
                 text-align: center;
@@ -311,17 +308,18 @@ header {
                     gap: 10px;
                     padding: 3px;
                 }
+                .companyLogo {
+                    display: inline-block;
+                    width: 50px;
+                    margin: 0;
+                }
+                #FirstHeading {
+                 font-size: 1.3rem;
+                 line-height: 1.3rem;
+                }
                 h1 {
                     text-align: left;
-                    font-size: 1.4rem;
-                    margin-left: -20px;
-                }
-                .companyLogo {
-                    display: block;
-                    width: 80px;
-                    height: 80px;
-                    margin-left: -20px;
-                    
+                    font-size: 1.4rem;                   
                 }
                 header {
                     background-color: #343434;
@@ -363,6 +361,9 @@ header {
                 }
                 .nav-links.active {
                     left: 0;
+                }
+                #HomeNav {
+                    margin-top: 80px;
                 }
             }
             @media (min-width: 659px) {
