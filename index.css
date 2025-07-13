@@ -147,27 +147,6 @@
                     transform: trasnlatex(0);
                 }
             }
-        /*.introSection {
-            
-        }*/
-           /* .intro {
-                animation-name: intro;
-                line-height: 1.8rem;
-                animation-iteration-count: 1;
-                animation-timing-function: ease;
-                animation-duration: 2s;
-                animation-fill-mode: forwards;
-            }
-            @keyframes intro {
-                from {
-                    transform: translatex(-50px);
-                    opacity: 0;
-                }
-                to {
-                    transform: translatex(0);
-                    opacity: 1;
-                }
-            } */
              /*underline effect */
             .nav-link::after {
                 content: "";
@@ -230,7 +209,7 @@
                 padding: 15px;
                 border-radius: 50%;
             }
-           
+           /* MEDIA QUERY FOR MOBILE VIEW */
             @media (max-width: 689px) {
                  .header-section {
                      display: flex;
@@ -253,8 +232,7 @@
                 }
                 h1 {
                     text-align: left;
-                    font-size: 1.4rem;
-                    /*margin-left: -30px; */                   
+                    font-size: 1.4rem;                   
                 }
                .image-intro {
                     display: flex;
@@ -282,24 +260,6 @@
                  margin-right: 10px;
                  margin-left: 10px;
                 }
-                
-          /*  .intro {
-                animation-name: intro;
-                animation-iteration-count: 1;
-                animation-timing-function: ease;
-                animation-duration: 2s;
-                animation-fill-mode: forwards;
-            }
-            @keyframes intro {
-                from {
-                    transform: translatex(-500px);
-                    opacity: 0;
-                }
-                to {
-                    transform: translatex(0);
-                    opacity: 1;
-                }
-            } */ 
                             .hamburger {
                     display: block;
                     cursor: pointer;
