@@ -299,11 +299,11 @@
                 
                 }
                 .serviceBox {
-                    border: 2px solid #343434 ;
+                    border: 2px solid var(--primary-navy) ;
                     border-radius: 1rem;
                     padding: 1.5rem;
-                    background-color: #faf9f6;
-                    color: #343434;
+                    background-color: var(--accent-cyan);
+                    color: var(--primary-navy);
                 }
                 .serviceBox:hover {
                     background-color: var(--primary-navy);
