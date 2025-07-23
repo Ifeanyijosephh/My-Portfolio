@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Ifeco digital services, web development, ui/ux designs, full web management, SEO optimization, clean and fast typing jobs, graphic desgins">
+        <meta name="description" content="I am a front-end developer passionante about building responsive websites using HTML, CSS Javascript, and React.">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="author" content="Ifeanyi 08072500911">
         <meta property="og:title" content="Ifeco Digital Services Portfolio">
@@ -11,11 +11,11 @@
         <meta property="og:image" content="images/ifeanyi.jpg">
         <meta property="og:url" content="https://example.com/ifeanyi-portfolio">
         <meta property="og:type" content="website">
-        <meta name="keywords" content="I am a front-end developer passionante about building responsive websites using HTML, CSS Javascript, and React.">
+        <meta name="keywords" content="Ifeco digital services, web development, ui/ux designs, full web management, SEO optimization, clean and fast typing jobs, graphic desgins">
         <meta name="robots" content="index, follow">
         <meta name="twitter:card" content="summary_large_image">
         <link rel="icon" type="image/png" sizes="32x32">
-        <link rel="icon" href="images/my-logo.png" type="image/png">
+        <link rel="icon" href="images/my-logoIcon.jpg" type="image/png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+icons">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
@@ -27,9 +27,7 @@
     <body>
         <header>
             <div class="header-section">
-                <!--<h1>IFECO DIGITAL SERVICES </h1>
-                <img src="images/my-logo.png" alt="Company Logo" class="companyLogo"> -->
-                <h1 id="FirstHeading">IFECO DIGITAL SERVICES</h1>
+                <img src="images/my-logo.jpg" alt="Company Logo" class="companyLogo">
                 <nav id="navMenu" class="nav-links">
                     <a href="index.html" class="nav-link" target="_blank" id="HomeNav"><i class="fa-solid fa-home"></i> Home</a>
                     <a href="services.html" class="nav-link" target="_blank"><i class="fa-solid fa-briefcase"></i> Services</a>
@@ -46,18 +44,16 @@
         </header>
         <main>
             <section class="aboutHero">
-                <h1 id="AboutMe"> About Me </h1>
+                <h1 class="AboutMeSmall">About Me</h1>
                     <div class="aboutIntro">
-                        <div class="aboutImage">
-                            <picture>
-                                <figure data-aos="zoom-in" data-aos-duration="1500">
-                                    <!--Image Responsiveness-->
-                                    <source media="(max-width: 368px)" srcset="images/ifeanyi-mobile.jpg">
-                                    <source media="(max-width: 768px)" srcset="images/ifeanyi-tablet.jpg">
-                                    <!--Image fallback-->
-                                    <img src="images/ifeanyi.jpg" alt="Ifeanyi Joseph" style="border: 2px solid #343434; border-radius: 10px;" height="500">
-                                </figure>
-                             </picture>
+                        <div class="aboutImage" class="ImageContainer" data-aos="zoom-in" data-aos-easing="ease" data-aos-duration="2000">
+                <picture>
+                    <!--Image Responsiveness-->
+                    <source media="(max-width: 368px)" srcset="images/Mobile-IfeanyiNoBg.png">
+                    <source media="(max-width: 768px)" srcset="images/Tablet-IfeanyiNoBg.png">
+                    <!--Image fallback-->
+                    <img src="images/IfeanyiNoBg.png" id="heroImage" alt="Ifeanyi Joseph -Front-end developer in Nigeria" height="500">
+                </picture>
                         </div>
                         <div class="aboutText">
                             <article>
@@ -81,7 +77,7 @@
                         </div>
                     </div>
             </section>
-            <hr id="horizontal">
+            
             <section class="InSections">
             <div class="aboutMission" data-aos="fade-up" data-aos-duration="1500">
                 <h3> My Mission </h3>

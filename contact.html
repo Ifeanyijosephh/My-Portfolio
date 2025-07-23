@@ -3,20 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Ifeco digital services, web development, ui/ux designs, full web management, SEO optimization, clean and fast typing jobs, graphic desgins">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="description" content="I am a front-end developer passionante about building responsive websites using HTML, CSS Javascript, and React.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="author" content="Ifeanyi 08072500911">
-        <meta property="og:title" content="Ifeco Digital Services Contact Page">
         <meta property="og:description" content="Ifeco Digital Services - Web Developer in Nigeria">
         <meta property="og:image" content="images/ifeanyi.jpg">
         <meta property="og:url" content="https://example.com/ifeanyi-portfolio">
         <meta property="og:type" content="website">
         <meta name="keywords" content="Ifeco, portfolio, web developer, automation, digital services, contact">
-        <link rel="icon" type="image/png" sizes="32x32">
         <meta name="robots" content="index, follow">
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="keywords" content="I am a front-end developer passionante about building responsive websites using HTML, CSS Javascript, and React.">
-        <link rel="icon" href="images/my-logo.png" type="image/png">
+        <meta name="keywords" content="Ifeco digital services, web development, ui/ux designs, full web management, SEO optimization, clean and fast typing jobs, graphic desgins">
+        <link rel="icon" href="images/my-logoIcon.jpg" type="image/png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+icons">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
@@ -27,9 +25,7 @@
     <body>
         <header>
             <div class="header-section">
-                <!--<h1>IFECO DIGITAL SERVICES </h1>
-                <img src="images/my-logo.png" alt="Company Logo" class="companyLogo"> -->
-                <h1 >IFECO DIGITAL SERVICES</h1>
+                <img src="images/my-logo.jpg" alt="Company Logo" class="companyLogo">
                 <nav id="navMenu" class="nav-links">
                     <a href="index.html" class="nav-link" target="_blank" id="HomeNav"><i class="fa-solid fa-home"></i> Home</a>
                     <a href="services.html" class="nav-link" target="_blank"><i class="fa-solid fa-briefcase"></i> Services</a>
@@ -49,16 +45,16 @@
                 <div class="secondheader">
                 <h2>Feel free to contact us anytime. We will get back to you as soon as we can!</h2><br>
                 </div><hr>
-                <p style="margin-top: 20px; padding: 15px;"> Fill the form below to share your thoughts, what you need from us or your review on our service to you. </p></p><br>
+                <p style="margin-top: 20px; padding: 15px;"> Fill the form below to share your thoughts, what you need from us or your review on our service to you.</p><br>
                 <form action="https://formspree.io/f/mdkzpgre" method="post" aria-label="Contact Form" autocomplete="on">
-                    <label for="name" style="font-size: 1rem;  font-weight: bold;">Name:</label><br>
-                    <input type="text" id="name" name="name" minlength="3" aria-label="Name" required>
+                    <label for="name" class="inputLabel">Name:</label><br>
+                    <input type="text" id="name" name="name" minlength="3" aria-label="Name" required aria-required="true">
                     <br><br>
-                    <label for="email" style="font-size: 1rem; font-weight: bold;">Email:</label><br>
-                    <input type="email" id="email" name="email" required aria-label="Email">
+                    <label for="email" class="inputLabel">Email:</label><br>
+                    <input type="email" id="email" name="email" required aria-label="Email" aria-required="true">
                     <br><br>
-                    <label for="message" style="font-size: 1rem;  font-weight: bold;">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" placeholder="write your message here" aria-label="Message"></textarea>
+                    <label for="message" class="inputLabel">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" placeholder="write your message here" aria-label="Message" required aria-required="true"></textarea>
                     <br><br>
                     <button type="submit" aria-label="Send Message" class="btn">Send Message</button>
                     <br><br>

@@ -4,33 +4,20 @@
         padding: 0;
         box-sizing: border-box;
     }
+                    :root {
+        --primary-navy: #01064a;
+        --accent-cyan: #f8fafa;
+        --text-color: white;
+    }
 body {
-        background-color: #faf9f6;
+        background-color: var(--accent-cyan);
+        color: var(--primary-navy);
     }
     main {
         padding: 30px;
     }
-h1 {
-                color: #faf9f6;
-                font-family: 'Poppins', sans-serif;               
-                animation-name: firsthead;
-                animation-duration: 1.5s;
-                animation-timing-function: ease;
-                animation-iteration-count: 1;
-                animation-fill-mode: forwards;
-            }
-            @keyframes firsthead {
-                from {
-                    transform: translateY(-160px);
-                }
-                to {
-                    transform: translateY(0);
-                }
-            }
-
- 
 header {
-        color: #faf9f6;
+        color:var(--accent-cyan);
         padding: 20px;
         position: fixed;
         top: 0;
@@ -38,16 +25,7 @@ header {
         width: 100%;
         z-index: 1000;
         }
-        /*
-.header-section {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #343434;
-        padding: 10px 30px 10px 30px;
-        border-radius: 25px;
-        } */
+ 
 .nav-links {
         display: flex;
         flex-direction: row;
@@ -56,7 +34,7 @@ header {
         align-items: center;
         }
 .nav-link {
-        color: #faf9f6;
+        color: var(--accent-cyan);
         text-decoration: none;
         padding: 5px;
         font-weight: bold;
@@ -77,10 +55,6 @@ header {
         }
     }
             /* HAMBURGER ICON FOR NAV BAR */
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
 .bar {
     display: block;
     width: 20px;
@@ -89,7 +63,7 @@ header {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
+    background-color: var(--accent-cyan);
 }
 .hamburger {
     display: none;
@@ -119,7 +93,7 @@ header {
     transform-origin: center; 
     width: 100%;
     height: 2px;
-    background-color:  #faf9f6;
+    background-color:var(--accent-cyan);
     transition: transform 0.3s ease;
 }
 .nav-link:hover::after {
@@ -141,15 +115,20 @@ header {
 }
     @keyframes logo {
         from {
-            transform: translateX(-100px);
+            transform: translateX(-30px);
             opacity: 0;
         }
+        to {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 }
 /*footer section */
 footer {
-    background-color: #343434;
+    background-color: var(--primary-navy);
     padding: 30px;
-    color: grey;
+    color: var(--accent-cyan);
     font-size: 0.9rem;
     margin-top: 20px;
     width: 100%;
@@ -163,7 +142,7 @@ footer {
     margin-top: 20px;
 }
 .footer-icons > a {
-    color: grey;
+    color: var(--accent-cyan);
 }
 .envelope-icon, .github-icon, .whatsapp-icon, .twitter-icon {
     border: 1px solid;
@@ -185,16 +164,16 @@ footer {
                     align-content: center;
                 }
     body {
-        margin-top: 100px;
+        padding-top: 100px;
     }
                 .companyLogo {
                     display: inline-block;
-                    width: 50px;
+                    width: 100px;
                     margin: 0;
                 }
                 #AboutMe {
                  font-size: 1.3rem;
-                 color: #343434;
+                 color: var(--primary-navy);
                  margin-left: -20px;
                 }
                 #FirstHeading {
@@ -205,7 +184,7 @@ footer {
                     font-size: 1.3rem;                   
                 }
                 header {
-                    background-color: #343434bd;
+                    background-color: var(--primary-navy);
                     backdrop-filter: blur(10px);
                     -webkit-backdrop-filter: blur(10px);
 
@@ -223,24 +202,25 @@ footer {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-5px) rotate(-45deg);
     }
-    .nav-links {
-        position: fixed;
-        left: -100%;
-        top: 0;
-        gap: 0;
-        flex-direction: column;
-        background-color: #343434;
-        width: 60%;
-        height: 100vh;
-        text-align: center; 
-        transition: 0.3s;
-    }
-    .nav-link {
-        margin: 16px 0;
-    }
-    .nav-links.active {
-        left: 0;
-    }
+                .nav-links {
+                    position: fixed;
+                    left: 0;
+                    top: -400px;
+                    gap: 0;
+                    flex-direction: column;
+                    background-color: var(--primary-navy);
+                    width: 100%;
+                    transition: 0.3s;
+                    z-index: -1;
+                
+                }
+                .nav-link {
+                    margin: 10px 0;
+    
+                }
+                .nav-links.active {
+                    top: 0;
+                }
                     #HomeNav {
                     margin-top: 80px;
                 }
@@ -292,12 +272,12 @@ footer {
     }
     .aboutContact a {
         text-decoration: none;
-        background-color: #343434;
+        background-color: var(--primary-navy);
         padding: 0.7rem;
         display: inline-block;
         margin-top: 2rem;
         cursor: pointer;
-        color: #faf9f6;
+        color: var(--accent-cyan);
     }
     img {
          margin: 30px auto;
@@ -305,6 +285,15 @@ footer {
          height: auto;
 
     }
+        .imageBg {
+                width: 100%;
+                height: 12.5em;
+                border-radius: 10px;
+                background-color: var(--primary-navy);
+                margin-top: -237px;
+                margin-left: auto;
+                margin-right: auto;
+            }
     #HeadingForLarge {
         display: none;
     }
@@ -316,18 +305,18 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        background-color: #343434;
+        background-color: var(--primary-navy);
         padding: 10px 30px 10px 30px;
         border-radius: 25px;
-                            background-color: #343434bd;
-                    backdrop-filter: blur(10px);
-                    -webkit-backdrop-filter: blur(10px);
         }
         #HeadingForLarge {
         display: block;
         margin-bottom: 50px;
         text-align: center;
         font-size: 1.4rem;
+    }
+    .AboutMeSmall {
+        display: none;
     }
     .nav-links {
         text-align: center;
@@ -341,10 +330,10 @@ footer {
     }
  
     .aboutMission {
-        border: 2px solid #343434;
+        border: 2px solid var(--primary-navy);
         border-radius: 10px;
         padding: 2rem;
-        grid-column: 1, 2;
+        grid-column: 1 / 2;
         line-height: 1.8rem;
     }
     .aboutMission h2 {
@@ -352,10 +341,10 @@ footer {
         margin-bottom: 30px;
     }
     .aboutWhy {
-        border: 2px solid #343434;
+        border: 2px solid var(--primary-navy);
          border-radius: 10px;
         padding: 2rem;
-        grid-column: 2, 3;
+        grid-column: 2 / 3;
         line-height: 1.7rem;
     }
     .aboutWhy h2 {
@@ -366,10 +355,10 @@ footer {
         list-style: square;
     }
     .aboutContact {
-        border: 2px solid #343434;
+        border: 2px solid var(--primary-navy);
          border-radius: 10px;
         padding: 2rem;
-        grid-column: 3, 4;
+        grid-column: 3 / 4;
         line-height: 1.7rem;
         
 
@@ -393,6 +382,8 @@ footer {
     .aboutText {
         justify-self: center;
         align-self: center;
+        margin-top: -200px;
+
     }
     #horizontal {
         display: none;
@@ -402,17 +393,36 @@ footer {
     }
     .cta-button {
                 text-decoration: none;
-        background-color: #343434;
+        background-color: var(--primary-navy);
         padding: 0.4rem;
         display: inline-block;
         margin-top: 2rem;
         cursor: pointer;
-        color: #faf9f6;
+        color:var(--accent-cyan);
         border-radius: 10px;
     }
     .cta-button:hover {
-        background-color: #faf9f6;
-        color: #343434;
-        border: 2px solid #343434;
+        background-color:var(--accent-cyan);
+        color: var(--primary-navy);
+        border: 2px solid var(--primary-navy);
     }
-}
+                .imageBg {
+                background-color: var(--primary-navy);
+                height: 200px;
+                margin-top: -256px;
+                border-radius: 20px;
+            }
+            .aboutHero {
+                margin-top: 80px;
+            }
+            
+            .companyLogo {
+                    display: inline-block;
+                    width: 100px;
+                    margin: 0;
+                }
+                .aboutImage {
+                    margin-bottom: 80px;
+                }
+ 
+    }
